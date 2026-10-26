@@ -96,3 +96,4 @@ tests/                      pruebas automatizadas (Módulo 2)
 ## Registro del ensayo de instalación limpia
 
 - **2026-10-25:** clon desde GitHub en una carpeta nueva, entorno nuevo y solo los pasos de este README. `main.py`, la prueba de conexión y el banco de prompts corrieron sin errores. Sin hallazgos.
+- **2026-10-26:** repetido tras simplificar el código y publicar este repositorio (`JoseSebaLM/PM1`), en Windows 11 con Python 3.14.3, fuera de la carpeta de trabajo. Instalación sin errores; `main.py`, la prueba de conexión y el banco de prompts (5/5 en los 3) corrieron sin traceback. En la copia clonada, `git status` no muestra `.env` y `git log --all -- .env` está vacío. Sin hallazgos.
