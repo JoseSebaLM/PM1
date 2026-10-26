@@ -1,13 +1,14 @@
-"""Banco de prompts de PM1, tutor de matemática para la PAES M1 (Bloque 10).
+"""Banco de prompts de PM1 (Bloque 10).
 
-Cada prompt tiene: nombre, prompt de sistema, ejemplo de entrada del usuario,
-claves que debe traer la respuesta JSON y, opcionalmente, el esquema que la API
-debe respetar al generar (response_schema).
+Cada prompt: nombre, prompt de sistema, ejemplo de entrada, claves esperadas
+en el JSON y, opcional, el esquema que la API debe respetar (response_schema).
 """
 
+# Los 4 ejes de la PAES M1
 EJES = ["numeros", "algebra_y_funciones", "geometria", "probabilidad_y_estadistica"]
 
 BANCO_DE_PROMPTS = [
+    # 1. Clasificar la duda en un eje (el enum limita las respuestas posibles)
     {
         "nombre": "clasificar_eje",
         "system_instruction": (
@@ -29,6 +30,7 @@ BANCO_DE_PROMPTS = [
             "required": ["eje", "confianza"],
         },
     },
+    # 2. Dar una pista sin resolver el ejercicio
     {
         "nombre": "generar_pista",
         "system_instruction": (
@@ -49,6 +51,8 @@ BANCO_DE_PROMPTS = [
             "required": ["pista", "concepto_clave", "dificultad"],
         },
     },
+    # 3. Separar datos e incógnita de un enunciado.
+    #    Sin response_schema a propósito: prueba si basta con pedir el JSON en el prompt.
     {
         "nombre": "extraer_datos_problema",
         "system_instruction": (
@@ -61,6 +65,5 @@ BANCO_DE_PROMPTS = [
             "¿Cuál es su área?"
         ),
         "claves_esperadas": ["datos", "incognita"],
-        # Sin response_schema a propósito: mide cuánto aguanta el formato solo con la instrucción.
     },
 ]
