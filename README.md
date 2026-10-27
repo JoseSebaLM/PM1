@@ -4,13 +4,7 @@ Miniaplicación en Python que usa la API de Gemini para ayudar a estudiantes que
 
 Gate 1 del Módulo 1 · Especialización en Desarrollo con IA Generativa (Skillnest · Accenture).
 
-## Cómo se hizo
-
-Soy estudiante del bootcamp, sin experiencia previa en programación. El bootcamp autoriza usar un editor con IA, y usé **Claude Code** como asistente.
-
-- **Yo:** elegí el proyecto y el proveedor (Gemini), creé el repositorio, el entorno virtual y la llave (Bloques 2 y 3), aprobé el plan de trabajo y revisé el resultado.
-- **Con IA:** el código y la documentación de los Bloques 4 a 11 se escribieron con asistencia de Claude Code, siguiendo las guías del curso. La IA también ejecutó las pruebas y mediciones. Esos commits llevan la línea `Co-Authored-By: Claude`.
-- El código tiene comentarios simples antes de cada bloque, para poder entenderlo y explicarlo.
+El bootcamp autoriza usar un editor con IA, y usé **Claude Code** como asistente.
 
 ## Requisitos
 
