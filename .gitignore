@@ -5,17 +5,31 @@ env/
 
 # Variables de entorno (secretos, nunca se sube)
 .env
+.env.*
+!.env.example
 
 # Cachés y compilados de Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 
+# Pruebas y herramientas de calidad (Módulo 2)
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Empaquetado
+build/
+dist/
+
 # Archivos del sistema operativo y del editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+.cursor/
 
 # Logs
 *.log
